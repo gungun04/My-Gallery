@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+<div class="container">
+    <h1>My Gallery</h1>
+    <div class="controls">
+        <div class="filters">
+            <button class="filter-button" data-filter="All">All</button>
+            <button class="filter-button" data-filter="Nature">Nature</button>
+            <button class="filter-button" data-filter="Places">Places</button>
+            <button class="filter-button" data-filter="Food">Food</button>
+            <button class="filter-button" data-filter="favorites">Favorites</button>
+            <button class="filter-button" data-filter="recycle-bin">Recycle Bin</button>
+        </div>
+        <div class="sort">
+            <button id="sort-by-date-button">Sort by Date</button>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="gallery-item" data-category="Nature" data-date="2024-01-02">
+            <img src="images/1.jpg" alt="Nature 1">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Nature" data-date="2024-01-20">
+            <img src="images/19.jpg" alt="Nature 2">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Nature" data-date="2024-01-11">
+            <img src="images/17.jpeg" alt="Nature 3">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Nature" data-date="2024-01-10">
+            <img src="images/18.jpg" alt="Nature 4">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Nature" data-date="2019-01-10">
+            <img src="images/nature1.jpg" alt="Nature 5">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Nature" data-date="2019-02-10">
+            <img src="images/nature2.jpg" alt="Nature 6">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Nature" data-date="2024-04-10">
+            <img src="images/nature3.jpg" alt="Nature 7">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Nature" data-date="2024-09-10">
+            <img src="images/nature4.jpeg" alt="Nature 8">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+
+
+        <div class="gallery-item" data-category="Places" data-date="2023-01-02">
+            <img src="images/3.jpg" alt="Places 1">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Places" data-date="2023-10-10">
+            <img src="images/5.jpg" alt="Places 2">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Places" data-date="2023-09-04">
+            <img src="images/6.jpeg" alt="Places 3">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Places" data-date="2023-04-04">
+            <img src="images/7.jpg" alt="Places 4">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Places" data-date="2023-03-28">
+            <img src="images/16.jpeg" alt="Places 5">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Places" data-date="2019-05-28">
+            <img src="images/place1.jpg" alt="Places 6">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Places" data-date="2021-06-28">
+            <img src="images/place2.jpg" alt="Places 7">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Places" data-date="2023-01-28">
+            <img src="images/place3.jpg" alt="Places 8">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+
+
+        <div class="gallery-item" data-category="Food" data-date="2022-10-04">
+            <img src="images/10.jpeg" alt="Food 1">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Food" data-date="2022-02-18">
+            <img src="images/11.jpeg" alt="Food 2">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Food" data-date="2022-11-10">
+            <img src="images/12.jpeg" alt="Food 3">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Food" data-date="2022-12-01">
+            <img src="images/13.jpeg" alt="Food 4">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Food" data-date="2022-10-12">
+            <img src="images/food1.jpeg" alt="Food 5">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Food" data-date="2022-10-23">
+            <img src="images/food2.jpeg" alt="Food 6">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Food" data-date="2022-10-21">
+            <img src="images/food3.jpeg" alt="Food 7">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+        <div class="gallery-item" data-category="Food" data-date="2022-12-21">
+            <img src="images/food4.jpeg" alt="Food 8">
+            <button class="favorite-button">&#x2661;</button>
+            <button class="delete-button">&#128465;</button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <!-- <h2>Recycle Bin</h2> -->
+    <div class="recycle-bin">
+        <!-- Deleted images will appear here -->
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
